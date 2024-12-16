@@ -5,5 +5,6 @@ D:\Apps and software\JavaProjects\DemoBlazeMiniProject\src\test\java\pages\Regis
 D:\Apps and software\JavaProjects\DemoBlazeMiniProject\src\test\java\pages\RegisterResult.java
 D:\Apps and software\JavaProjects\DemoBlazeMiniProject\src\test\java\test\TC_001_RegisterTest.java
 D:\Apps and software\JavaProjects\DemoBlazeMiniProject\src\test\java\test\TC_002_SignInTest.java
+D:\Apps and software\JavaProjects\DemoBlazeMiniProject\src\test\java\test\TC_003_InvalidLoginTest.java
 D:\Apps and software\JavaProjects\DemoBlazeMiniProject\src\test\java\utility\ListenerClass.java
 D:\Apps and software\JavaProjects\DemoBlazeMiniProject\src\test\java\utility\Utility.java

@@ -6,8 +6,11 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.ProjectSpecificationMethod;
 import net.bytebuddy.asm.Advice.This;
@@ -34,10 +37,11 @@ public class HomePage extends ProjectSpecificationMethod {
 	
     public HomePage validateLogin() {
 		
-    	String expectedUserId = "Welcome Harish2116";
-        WebElement userId ;
+    	
 
         try {
+        	String expectedUserId = "Welcome Harish2116";
+            WebElement userId ;
             userId = driver.findElement(By.xpath("//a[@id='nameofuser']"));
             visibilityofElement(userId);
             String actualId = userId.getText();
@@ -63,13 +67,23 @@ public class HomePage extends ProjectSpecificationMethod {
        
       //alert Handled
        private void handleAlert() {
-           try {
-               Alert alert = driver.switchTo().alert(); // Switch to alert
-               System.out.println("Alert text: " + alert.getText()); // Print alert text
-               alert.accept(); // Accept the alert
-           } catch (Exception e) {
-               System.out.println("No alert present.");
-           }
+
+    	   try {
+    		    // Attempt login
+    		  // Check for an alert only if you expect one
+    		    Alert alert = driver.switchTo().alert();
+    		    String alertText = alert.getText();
+    		    
+    		    if ("Wrong password.".equals(alertText)) {
+    		        System.out.println("Login failed: " + alertText);
+    		        alert.accept(); // Handle the expected alert
+    		    }
+    		} catch (NoAlertPresentException e) {
+    		    System.out.println("Login successful, no alerts present.");
+    		} catch (UnhandledAlertException e) {
+    		    System.out.println("Unexpected Alert: " + e.getMessage());
+    		}
+
        }
 
 	public LoginPage clickTheCategoryL() {

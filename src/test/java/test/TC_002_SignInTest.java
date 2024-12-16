@@ -25,8 +25,8 @@ public class TC_002_SignInTest extends ProjectSpecificationMethod {
 	public void loginTest() throws InterruptedException {
 		HomePage obj = new HomePage(driver);
 		obj.loginClick()
-		.userName(prop.getProperty("validSignUserName"))
-		.password(prop.getProperty("validSignPassword"))
+		.userName(prop.getProperty("validUserName"))
+		.password(prop.getProperty("ValidPassword"))
 		.clickSignInButton()
 		.validateLogin()
 		.clickTheCategoryL()

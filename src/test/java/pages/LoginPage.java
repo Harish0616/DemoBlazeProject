@@ -48,8 +48,14 @@ public class LoginPage extends ProjectSpecificationMethod {
 	}
 	
 	public HomePage clickSignInButton() {
-		driver.findElement(By.xpath("//button[contains(text(),'Log in')]")).click();
+//		driver.findElement(By.xpath("//button[contains(text(),'Log in')]")).click();
+//		return new HomePage(driver);
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebElement signInButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Log in')]")));
+		signInButton.click();
 		return new HomePage(driver);
+
 	}
 	
 	public LoginPage clickTheCategoryL() {
@@ -60,13 +66,10 @@ public class LoginPage extends ProjectSpecificationMethod {
 
     public LoginPage validateTitle() {
         String expectedTitle = "PRODUCT STORE"; // Update this with the actual expected title
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Set a wait time of 20 seconds
-
-        // Wait for the title to match or contain part of the expected title
-        wait.until(ExpectedConditions.titleContains("STORE")); // Adjusted condition
-
-        // Get actual title
-        String actualTitle = driver.getTitle();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebElement productstore = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@id='nava']")));
+        String actualTitle = productstore.getText();
+        
 
         if (expectedTitle.equals(actualTitle)) {
             System.out.println("Expected Title is matched: " + actualTitle);
@@ -79,10 +82,11 @@ public class LoginPage extends ProjectSpecificationMethod {
 
     // Select the Laptop Product
     public LoginPage clickTheProduct() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Set a wait time of 20 seconds
-        WebElement productLink = wait.until(ExpectedConditions.elementToBeClickable(By.partialLinkText("Sony vaio i5")));
-        
-        productLink.click();
+    	driver.navigate().refresh();
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    	WebElement productLink = wait.until(ExpectedConditions.elementToBeClickable(By.partialLinkText("Sony vaio i5")));
+    	productLink.click();
+
         return this;
     }
     
@@ -171,9 +175,10 @@ public class LoginPage extends ProjectSpecificationMethod {
      public LoginPage getClickPurchasePage() {
     	 try {
      		// Set up WebDriverWait
-     	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5)); // 20 seconds timeout
+     	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // 20 seconds timeout
      	        
      	        WebElement puchaseButton=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Place Order')]")));
+     	        handleAlert();
      	        
      	        puchaseButton.click();
      	        System.out.println("Purchase pop up navigating");
@@ -221,7 +226,7 @@ public class LoginPage extends ProjectSpecificationMethod {
      //click the purchase order
      public LoginPage clickPurchaseButton() {
     	 
-    	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5)); // 20 seconds timeout
+    	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // 20 seconds timeout
 	        
 	     WebElement purchaseButton =wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Purchase')]")));
     	 
@@ -337,16 +342,18 @@ public class LoginPage extends ProjectSpecificationMethod {
 //     }
 //     
     
-
      private void handleAlert() {
-		// TODO Auto-generated method stub
-		try {
-            Alert alert = driver.switchTo().alert(); // Switch to alert
-            System.out.println("Alert text: " + alert.getText()); // Print alert text
-            alert.accept(); // Accept the alert
-        } catch (Exception e) {
-            System.out.println("No alert present.");
-        }
-	}
+    	    try {
+    	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+    	        wait.until(ExpectedConditions.alertIsPresent());
+    	        Alert alert = driver.switchTo().alert();
+    	        System.out.println("Alert text: " + alert.getText());
+    	        alert.accept(); // Accept the alert to proceed
+    	    } catch (Exception e) {
+    	        System.out.println("No alert present.");
+    	    }
+    	}
+
+    
 	
 }

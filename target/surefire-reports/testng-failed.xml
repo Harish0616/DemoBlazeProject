@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utility.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://www.demoblaze.com"/>
+    <classes>
+      <class name="test.TC_003_InvalidLoginTest">
+        <methods>
+          <include name="closesuite"/>
+          <include name="data"/>
+          <include name="launchLoadUrl"/>
+          <include name="InvalidTest"/>
+          <include name="reportInitilization"/>
+          <include name="closeLaunch"/>
+        </methods>
+      </class> <!-- test.TC_003_InvalidLoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Edge Test(failed)" verbose="0">
+    <parameter name="browser" value="Edge"/>
+    <parameter name="url" value="https://www.demoblaze.com"/>
+    <classes>
+      <class name="test.TC_003_InvalidLoginTest">
+        <methods>
+          <include name="closesuite"/>
+          <include name="data"/>
+          <include name="launchLoadUrl"/>
+          <include name="InvalidTest"/>
+          <include name="reportInitilization"/>
+          <include name="closeLaunch"/>
+        </methods>
+      </class> <!-- test.TC_003_InvalidLoginTest -->
+    </classes>
+  </test> <!-- Edge Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

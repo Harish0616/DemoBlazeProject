@@ -10,6 +10,7 @@
     <classes>
       <class name="test.TC_001_RegisterTest"/>
       <class name="test.TC_002_SignInTest"/>
+      
     </classes>
     </test> <!-- Test -->
     
@@ -19,6 +20,7 @@
     <classes>
        <class name="test.TC_001_RegisterTest"/>
        <class name="test.TC_002_SignInTest"/>
+       
     </classes>
   </test>
 </suite> <!-- Suite -->
