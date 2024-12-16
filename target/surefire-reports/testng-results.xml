@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-16T11:43:37 IST" name="Suite" finished-at="2024-12-16T11:46:10 IST" duration-ms="152872">
+  <suite started-at="2024-12-16T13:43:56 IST" name="Suite" finished-at="2024-12-16T13:46:42 IST" duration-ms="165478">
     <groups>
     </groups>
-    <test started-at="2024-12-16T11:43:37 IST" name="Test" finished-at="2024-12-16T11:44:50 IST" duration-ms="73176">
-      <class name="test.TC_002_SignInTest">
-        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_002_SignInTest@30c15d8b]" started-at="2024-12-16T11:43:37 IST" name="data" finished-at="2024-12-16T11:43:37 IST" duration-ms="2" status="PASS">
+    <test started-at="2024-12-16T13:43:56 IST" name="Test" finished-at="2024-12-16T13:45:16 IST" duration-ms="79470">
+      <class name="test.TC_003_InvalidLoginTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_003_InvalidLoginTest@51399530]" started-at="2024-12-16T13:43:56 IST" name="data" finished-at="2024-12-16T13:43:56 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- data -->
-        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_SignInTest@30c15d8b]" started-at="2024-12-16T11:43:45 IST" name="launchLoadUrl" finished-at="2024-12-16T11:43:48 IST" duration-ms="3426" status="PASS">
+        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_003_InvalidLoginTest@51399530]" started-at="2024-12-16T13:45:11 IST" name="launchLoadUrl" finished-at="2024-12-16T13:45:14 IST" duration-ms="3133" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,21 +27,51 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchLoadUrl -->
-        <test-method signature="loginTest()[pri:0, instance:test.TC_002_SignInTest@30c15d8b]" started-at="2024-12-16T11:43:48 IST" name="loginTest" finished-at="2024-12-16T11:44:49 IST" duration-ms="61043" status="PASS">
+        <test-method signature="InvalidTest()[pri:0, instance:test.TC_003_InvalidLoginTest@51399530]" started-at="2024-12-16T13:45:14 IST" name="InvalidTest" finished-at="2024-12-16T13:45:15 IST" duration-ms="1683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidTest -->
+        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_003_InvalidLoginTest@51399530]" started-at="2024-12-16T13:45:15 IST" name="closeLaunch" finished-at="2024-12-16T13:45:16 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeLaunch -->
+      </class> <!-- test.TC_003_InvalidLoginTest -->
+      <class name="test.TC_002_SignInTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_002_SignInTest@6771beb3]" started-at="2024-12-16T13:43:56 IST" name="data" finished-at="2024-12-16T13:43:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_SignInTest@6771beb3]" started-at="2024-12-16T13:44:03 IST" name="launchLoadUrl" finished-at="2024-12-16T13:44:07 IST" duration-ms="3199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.demoblaze.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchLoadUrl -->
+        <test-method signature="loginTest()[pri:0, instance:test.TC_002_SignInTest@6771beb3]" started-at="2024-12-16T13:44:07 IST" name="loginTest" finished-at="2024-12-16T13:45:10 IST" duration-ms="63654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_002_SignInTest@30c15d8b]" started-at="2024-12-16T11:44:49 IST" name="closeLaunch" finished-at="2024-12-16T11:44:50 IST" duration-ms="467" status="PASS">
+        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_002_SignInTest@6771beb3]" started-at="2024-12-16T13:45:10 IST" name="closeLaunch" finished-at="2024-12-16T13:45:11 IST" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeLaunch -->
       </class> <!-- test.TC_002_SignInTest -->
       <class name="test.TC_001_RegisterTest">
-        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_001_RegisterTest@5fe94a96]" started-at="2024-12-16T11:43:37 IST" name="data" finished-at="2024-12-16T11:43:37 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_001_RegisterTest@765d7657]" started-at="2024-12-16T13:43:56 IST" name="data" finished-at="2024-12-16T13:43:56 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- data -->
-        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_001_RegisterTest@5fe94a96]" started-at="2024-12-16T11:43:37 IST" name="launchLoadUrl" finished-at="2024-12-16T11:43:43 IST" duration-ms="5951" status="PASS">
+        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_001_RegisterTest@765d7657]" started-at="2024-12-16T13:43:56 IST" name="launchLoadUrl" finished-at="2024-12-16T13:44:01 IST" duration-ms="4823" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,23 +87,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchLoadUrl -->
-        <test-method signature="registerTest()[pri:0, instance:test.TC_001_RegisterTest@5fe94a96]" started-at="2024-12-16T11:43:43 IST" name="registerTest" finished-at="2024-12-16T11:43:45 IST" duration-ms="1917" status="PASS">
+        <test-method signature="registerTest()[pri:0, instance:test.TC_001_RegisterTest@765d7657]" started-at="2024-12-16T13:44:01 IST" name="registerTest" finished-at="2024-12-16T13:44:03 IST" duration-ms="2122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_001_RegisterTest@5fe94a96]" started-at="2024-12-16T11:43:45 IST" name="closeLaunch" finished-at="2024-12-16T11:43:45 IST" duration-ms="293" status="PASS">
+        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_001_RegisterTest@765d7657]" started-at="2024-12-16T13:44:03 IST" name="closeLaunch" finished-at="2024-12-16T13:44:03 IST" duration-ms="328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeLaunch -->
       </class> <!-- test.TC_001_RegisterTest -->
     </test> <!-- Test -->
-    <test started-at="2024-12-16T11:44:51 IST" name="Edge Test" finished-at="2024-12-16T11:46:10 IST" duration-ms="78921">
-      <class name="test.TC_002_SignInTest">
-        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_002_SignInTest@3eb738bb]" started-at="2024-12-16T11:44:51 IST" name="data" finished-at="2024-12-16T11:44:51 IST" duration-ms="1" status="PASS">
+    <test started-at="2024-12-16T13:45:16 IST" name="Edge Test" finished-at="2024-12-16T13:46:42 IST" duration-ms="85134">
+      <class name="test.TC_003_InvalidLoginTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_003_InvalidLoginTest@6f03482]" started-at="2024-12-16T13:45:16 IST" name="data" finished-at="2024-12-16T13:45:16 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- data -->
-        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_SignInTest@3eb738bb]" started-at="2024-12-16T11:45:00 IST" name="launchLoadUrl" finished-at="2024-12-16T11:45:05 IST" duration-ms="5689" status="PASS">
+        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_003_InvalidLoginTest@6f03482]" started-at="2024-12-16T13:46:35 IST" name="launchLoadUrl" finished-at="2024-12-16T13:46:40 IST" duration-ms="5495" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,25 +119,55 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchLoadUrl -->
-        <test-method signature="loginTest()[pri:0, instance:test.TC_002_SignInTest@3eb738bb]" started-at="2024-12-16T11:45:05 IST" name="loginTest" finished-at="2024-12-16T11:46:09 IST" duration-ms="63705" status="PASS">
+        <test-method signature="InvalidTest()[pri:0, instance:test.TC_003_InvalidLoginTest@6f03482]" started-at="2024-12-16T13:46:40 IST" name="InvalidTest" finished-at="2024-12-16T13:46:41 IST" duration-ms="880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidTest -->
+        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_003_InvalidLoginTest@6f03482]" started-at="2024-12-16T13:46:41 IST" name="closeLaunch" finished-at="2024-12-16T13:46:42 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeLaunch -->
+      </class> <!-- test.TC_003_InvalidLoginTest -->
+      <class name="test.TC_002_SignInTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_002_SignInTest@185a6e9]" started-at="2024-12-16T13:45:16 IST" name="data" finished-at="2024-12-16T13:45:16 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_SignInTest@185a6e9]" started-at="2024-12-16T13:45:25 IST" name="launchLoadUrl" finished-at="2024-12-16T13:45:30 IST" duration-ms="5640" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.demoblaze.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchLoadUrl -->
+        <test-method signature="loginTest()[pri:0, instance:test.TC_002_SignInTest@185a6e9]" started-at="2024-12-16T13:45:30 IST" name="loginTest" finished-at="2024-12-16T13:46:35 IST" duration-ms="64395" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_002_SignInTest@3eb738bb]" started-at="2024-12-16T11:46:09 IST" name="closeLaunch" finished-at="2024-12-16T11:46:10 IST" duration-ms="475" status="PASS">
+        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_002_SignInTest@185a6e9]" started-at="2024-12-16T13:46:35 IST" name="closeLaunch" finished-at="2024-12-16T13:46:35 IST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeLaunch -->
       </class> <!-- test.TC_002_SignInTest -->
       <class name="test.TC_001_RegisterTest">
-        <test-method is-config="true" signature="reportInitilization()[pri:0, instance:test.TC_001_RegisterTest@233795b6]" started-at="2024-12-16T11:43:36 IST" name="reportInitilization" finished-at="2024-12-16T11:43:37 IST" duration-ms="410" status="PASS">
+        <test-method is-config="true" signature="reportInitilization()[pri:0, instance:test.TC_001_RegisterTest@1e800aaa]" started-at="2024-12-16T13:43:56 IST" name="reportInitilization" finished-at="2024-12-16T13:43:56 IST" duration-ms="394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportInitilization -->
-        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_001_RegisterTest@233795b6]" started-at="2024-12-16T11:44:51 IST" name="data" finished-at="2024-12-16T11:44:51 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_001_RegisterTest@1e800aaa]" started-at="2024-12-16T13:45:16 IST" name="data" finished-at="2024-12-16T13:45:16 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- data -->
-        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_001_RegisterTest@233795b6]" started-at="2024-12-16T11:44:51 IST" name="launchLoadUrl" finished-at="2024-12-16T11:44:57 IST" duration-ms="6694" status="PASS">
+        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_001_RegisterTest@1e800aaa]" started-at="2024-12-16T13:45:16 IST" name="launchLoadUrl" finished-at="2024-12-16T13:45:22 IST" duration-ms="5882" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,15 +183,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchLoadUrl -->
-        <test-method signature="registerTest()[pri:0, instance:test.TC_001_RegisterTest@233795b6]" started-at="2024-12-16T11:44:57 IST" name="registerTest" finished-at="2024-12-16T11:45:00 IST" duration-ms="2158" status="PASS">
+        <test-method signature="registerTest()[pri:0, instance:test.TC_001_RegisterTest@1e800aaa]" started-at="2024-12-16T13:45:22 IST" name="registerTest" finished-at="2024-12-16T13:45:24 IST" duration-ms="2023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_001_RegisterTest@233795b6]" started-at="2024-12-16T11:45:00 IST" name="closeLaunch" finished-at="2024-12-16T11:45:00 IST" duration-ms="189" status="PASS">
+        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_001_RegisterTest@1e800aaa]" started-at="2024-12-16T13:45:24 IST" name="closeLaunch" finished-at="2024-12-16T13:45:25 IST" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeLaunch -->
-        <test-method is-config="true" signature="closesuite()[pri:0, instance:test.TC_001_RegisterTest@233795b6]" started-at="2024-12-16T11:46:10 IST" name="closesuite" finished-at="2024-12-16T11:46:10 IST" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="closesuite()[pri:0, instance:test.TC_001_RegisterTest@1e800aaa]" started-at="2024-12-16T13:46:42 IST" name="closesuite" finished-at="2024-12-16T13:46:42 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closesuite -->

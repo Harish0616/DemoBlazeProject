@@ -20,7 +20,7 @@ public class TC_003_InvalidLoginTest extends ProjectSpecificationMethod {
 	}
 	
 	@Test
-	public void InvalidTest() throws InterruptedException {
+	public void InvalidTest() {
 		HomePage obj = new HomePage(driver);
 		obj.loginClick()
 		.userName(prop.getProperty("invalidUsername"))

@@ -1,113 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-10T20:30:17 IST" name="Suite" finished-at="2024-12-10T20:34:21 IST" duration-ms="243610">
+  <suite started-at="2024-12-16T13:42:32 IST" name="Suite" finished-at="2024-12-16T13:42:38 IST" duration-ms="5859">
     <groups>
     </groups>
-    <test started-at="2024-12-10T20:30:17 IST" name="Test" finished-at="2024-12-10T20:31:50 IST" duration-ms="92508">
-      <class name="test.TC_002_SignInTest">
-        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_002_SignInTest@58a9760d]" started-at="2024-12-10T20:30:17 IST" name="data" finished-at="2024-12-10T20:30:17 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- data -->
-        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_SignInTest@58a9760d]" started-at="2024-12-10T20:30:26 IST" name="launchLoadUrl" finished-at="2024-12-10T20:30:31 IST" duration-ms="4991" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.demoblaze.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchLoadUrl -->
-        <test-method signature="loginTest()[pri:0, instance:test.TC_002_SignInTest@58a9760d]" started-at="2024-12-10T20:30:31 IST" name="loginTest" finished-at="2024-12-10T20:31:30 IST" duration-ms="59487" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_002_SignInTest@58a9760d]" started-at="2024-12-10T20:31:30 IST" name="closeLaunch" finished-at="2024-12-10T20:31:50 IST" duration-ms="19521" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeLaunch -->
-      </class> <!-- test.TC_002_SignInTest -->
-      <class name="test.TC_001_RegisterTest">
-        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_001_RegisterTest@3c3d9b6b]" started-at="2024-12-10T20:30:17 IST" name="data" finished-at="2024-12-10T20:30:17 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- data -->
-        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_001_RegisterTest@3c3d9b6b]" started-at="2024-12-10T20:30:17 IST" name="launchLoadUrl" finished-at="2024-12-10T20:30:23 IST" duration-ms="5971" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.demoblaze.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchLoadUrl -->
-        <test-method signature="registerTest()[pri:0, instance:test.TC_001_RegisterTest@3c3d9b6b]" started-at="2024-12-10T20:30:23 IST" name="registerTest" finished-at="2024-12-10T20:30:25 IST" duration-ms="1511" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_001_RegisterTest@3c3d9b6b]" started-at="2024-12-10T20:30:25 IST" name="closeLaunch" finished-at="2024-12-10T20:30:26 IST" duration-ms="913" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeLaunch -->
-      </class> <!-- test.TC_001_RegisterTest -->
-    </test> <!-- Test -->
-    <test started-at="2024-12-10T20:31:51 IST" name="Edge Test" finished-at="2024-12-10T20:34:21 IST" duration-ms="150145">
-      <class name="test.TC_002_SignInTest">
-        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_002_SignInTest@2118cddf]" started-at="2024-12-10T20:31:51 IST" name="data" finished-at="2024-12-10T20:31:51 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- data -->
-        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_SignInTest@2118cddf]" started-at="2024-12-10T20:32:16 IST" name="launchLoadUrl" finished-at="2024-12-10T20:32:23 IST" duration-ms="7304" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.demoblaze.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchLoadUrl -->
-        <test-method signature="loginTest()[pri:0, instance:test.TC_002_SignInTest@2118cddf]" started-at="2024-12-10T20:32:23 IST" name="loginTest" finished-at="2024-12-10T20:33:27 IST" duration-ms="63463" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_002_SignInTest@2118cddf]" started-at="2024-12-10T20:33:27 IST" name="closeLaunch" finished-at="2024-12-10T20:34:21 IST" duration-ms="53879" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeLaunch -->
-      </class> <!-- test.TC_002_SignInTest -->
-      <class name="test.TC_001_RegisterTest">
-        <test-method is-config="true" signature="reportInitilization()[pri:0, instance:test.TC_001_RegisterTest@5609159b]" started-at="2024-12-10T20:30:16 IST" name="reportInitilization" finished-at="2024-12-10T20:30:17 IST" duration-ms="747" status="PASS">
+    <test started-at="2024-12-16T13:42:32 IST" name="Test" finished-at="2024-12-16T13:42:38 IST" duration-ms="5859">
+      <class name="test.TC_003_InvalidLoginTest">
+        <test-method is-config="true" signature="reportInitilization()[pri:0, instance:test.TC_003_InvalidLoginTest@158a8276]" started-at="2024-12-16T13:42:31 IST" name="reportInitilization" finished-at="2024-12-16T13:42:32 IST" duration-ms="430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportInitilization -->
-        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_001_RegisterTest@5609159b]" started-at="2024-12-10T20:31:51 IST" name="data" finished-at="2024-12-10T20:31:51 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_003_InvalidLoginTest@158a8276]" started-at="2024-12-16T13:42:32 IST" name="data" finished-at="2024-12-16T13:42:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- data -->
-        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_001_RegisterTest@5609159b]" started-at="2024-12-10T20:31:51 IST" name="launchLoadUrl" finished-at="2024-12-10T20:31:58 IST" duration-ms="6924" status="PASS">
+        <test-method is-config="true" signature="launchLoadUrl(java.lang.String,java.lang.String)[pri:0, instance:test.TC_003_InvalidLoginTest@158a8276]" started-at="2024-12-16T13:42:32 IST" name="launchLoadUrl" finished-at="2024-12-16T13:42:36 IST" duration-ms="4037" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,26 +24,26 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Edge]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchLoadUrl -->
-        <test-method signature="registerTest()[pri:0, instance:test.TC_001_RegisterTest@5609159b]" started-at="2024-12-10T20:31:58 IST" name="registerTest" finished-at="2024-12-10T20:32:01 IST" duration-ms="3101" status="PASS">
+        <test-method signature="InvalidTest()[pri:0, instance:test.TC_003_InvalidLoginTest@158a8276]" started-at="2024-12-16T13:42:36 IST" name="InvalidTest" finished-at="2024-12-16T13:42:37 IST" duration-ms="1535" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_001_RegisterTest@5609159b]" started-at="2024-12-10T20:32:01 IST" name="closeLaunch" finished-at="2024-12-10T20:32:16 IST" duration-ms="15454" status="PASS">
+        </test-method> <!-- InvalidTest -->
+        <test-method is-config="true" signature="closeLaunch()[pri:0, instance:test.TC_003_InvalidLoginTest@158a8276]" started-at="2024-12-16T13:42:37 IST" name="closeLaunch" finished-at="2024-12-16T13:42:38 IST" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeLaunch -->
-        <test-method is-config="true" signature="closesuite()[pri:0, instance:test.TC_001_RegisterTest@5609159b]" started-at="2024-12-10T20:34:21 IST" name="closesuite" finished-at="2024-12-10T20:34:21 IST" duration-ms="38" status="PASS">
+        <test-method is-config="true" signature="closesuite()[pri:0, instance:test.TC_003_InvalidLoginTest@158a8276]" started-at="2024-12-16T13:42:38 IST" name="closesuite" finished-at="2024-12-16T13:42:38 IST" duration-ms="711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closesuite -->
-      </class> <!-- test.TC_001_RegisterTest -->
-    </test> <!-- Edge Test -->
+      </class> <!-- test.TC_003_InvalidLoginTest -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
